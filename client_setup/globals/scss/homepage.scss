@@ -1,0 +1,232 @@
+.home {
+    .banner {
+        background-color: #5000ca;
+        padding-top: 2em;
+        padding-bottom: 7em;
+        position: relative;
+    }
+
+    .banner-img {
+        width: 100%;
+        padding: 1em;
+    }
+    
+    .row {
+        display: flex;
+        flex-flow: wrap;
+    }
+    
+    .description {
+        font-size:  16px;
+        line-height: 26px;
+        color: #fff;
+        font-weight: 400;    
+    }
+    
+    h1 {
+        font-size: 48px;
+        color: white;
+    }
+    
+    h2 {
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: 600;
+        color: #2e2e2e;
+    }
+    
+    h4 {
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 600;
+        color: #2e2e2e;
+    }
+
+    
+    
+    .feature, .steps {
+        text-align: center;
+    
+        .feature-description {
+            font-size: 15px;
+            margin: 1em auto 0;
+            max-width: 680px;
+            line-height: 26px;
+            color: #5e5e5e;
+        }
+    
+        .feature-list {
+            margin-top: 2em;
+    
+            .feature-block {
+                padding: 1.5em;
+                margin-bottom: 1.5em;
+                box-sizing: border-box;
+    
+                &:hover{
+                    background-color: whitesmoke;
+                }
+    
+                .feature-description {
+                    margin-top: 0.5em;
+                }
+    
+                .icon-block {
+                    height: 5em;
+                    margin-bottom: 20px;                    
+
+                    &.fast {
+                        background: url(/assets/fast.svg) no-repeat center;
+                        background-size: 5em;
+                    }
+
+                    &.edit {
+                        background: url(/assets/edit.svg) no-repeat center;
+                        background-size: 5em;
+                    }
+
+                    &.pricing {
+                        background: url(/assets/pricing.svg) no-repeat center;
+                        background-size: 5em;
+                    }
+
+                    &.process {
+                        background: url(/assets/process.svg) no-repeat center;
+                        background-size: 5em;
+                    }
+
+                    &.team {
+                        background: url(/assets/team.svg) no-repeat center;
+                        background-size: 5em;
+                    }
+
+                    &.upload {
+                        background: url(/assets/upload.svg) no-repeat center;
+                        background-size: 5em;
+                    }
+                }
+            }
+        }
+    }
+    
+    .steps {
+        margin-top: 5em;
+        text-align: left;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .overview-section {
+        padding: 4em 0;
+        &:nth-child(even) {
+            background-color: whitesmoke;
+        }
+    
+        .content {
+            padding: 0 1em;
+        }
+    
+        .description {
+            font-size: 17px;
+            margin: 1em auto 0;
+            max-width: 680px;
+            line-height: 26px;
+            color: #5e5e5e;
+        }
+    
+        .figure {
+            padding: 1em 1em 0 0;
+            figure{
+                box-shadow: 0px 15px 40px 15px rgba(0, 0, 0, 0.1);
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+        }
+    }
+    .faq {
+        margin: 5em auto 1em;
+
+        .arrow-image {
+            max-height: 25px;
+            max-width: 25px;
+            padding: 0;
+            margin: 0;
+
+            transform: rotate(0deg);
+            transition: transform 0.12s ease-in-out;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        .header {
+            h2 {
+                text-align: center;
+            }
+        }
+        .row-body {
+            .faq-row {
+                border-bottom: 1px solid #ccc;
+                padding: 10px 0;
+            }
+            .row-title {
+                padding: 10px 0;    
+                display: flex;
+                justify-content: space-between;
+                color: #5000ca;
+                font-size: 1.1em;
+                letter-spacing: 0.25px;
+                cursor: pointer;
+                align-items: center;
+                font-weight: bold;
+            }
+
+            .row-title.expanded {
+                +.row-content {
+                    display: block;
+                }    
+
+                .arrow-image {
+                    transform: rotate(180deg);
+                    transition: transform 0.12s ease-in-out;
+                }
+            }
+
+            .row-content {
+                display: none;
+                padding-bottom: 1em;
+                line-height: 1.5em;
+                color: #5e5e5e;
+                font-size: 14px;
+            }
+        }
+    }
+    
+    @import '../animation/wavesound.scss';
+}
+
+.text-white {
+    color: white;
+}
+
+.footer-header {
+    margin-bottom: 0.5em;
+}
+
+.footer {
+    align-items: center;
+
+    .button {
+        border-radius: 4px;
+        margin: 0;
+        padding: 0.5em 2em;
+    }
+}
+
+.login-container {
+    height: 100%;
+}

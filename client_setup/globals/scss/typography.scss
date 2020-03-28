@@ -1,0 +1,19 @@
+@mixin typography($typography) {
+    @if $typography == title {
+        font-size: 45px;
+        @include viewport(small) {
+            font-size: 31px;
+        }
+    } @else if $typography == body {
+        font-size: 17px;
+        color: black;
+        @include viewport(small) {
+            font-size: 14px;
+        }
+    } @else if $typography == subheader {
+        font-size: 30px;
+        @include viewport(small) {
+            font-size: 25px;
+        }
+    } 
+}

@@ -1,0 +1,10 @@
+.link {
+    font-size: 15px;
+    text-decoration: none;
+
+    &.text {
+        color: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+    }
+}
